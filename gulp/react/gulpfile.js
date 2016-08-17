@@ -25,7 +25,7 @@ const bundler = {
   init: function init() {
     this.w = watchify(browserify({
       extensions: ['.js', '.jsx', '.json'],
-      entries: ['./src/index.js'],
+      entries: ['./src/index.jsx'],
       debug: true, // enable inline sourcemaps
       cache: {},
       packageCache: {},
