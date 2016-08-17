@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const less = require('gulp-less');
 // const babel = require('gulp-babel');
 const browserSync = require('browser-sync');
-const reload = browserSync.reload;
 const concat = require('gulp-concat');
 const browserify = require('browserify');
 const source = require('vinyl-source-stream');
@@ -17,6 +16,8 @@ const merge = require('merge-stream');
 const eslint = require('gulp-eslint');
 const cache = require('gulp-cache');
 const assets = require('./package-assets.json');
+
+const reload = browserSync.reload;
 
 const bundler = {
   hotReloading: false,

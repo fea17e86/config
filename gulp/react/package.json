@@ -10,6 +10,7 @@
     "url": "git@gitlab.cedavis.com:fea17e86/[PROJECT_NAME.git]"
   },
   "dependencies": {
+    "babel-eslint": "^6.1.2",
     "browserify": "^13.1.0",
     "browser-sync": "^2.14.0",
     "del": "^2.2.2",
