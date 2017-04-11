@@ -1,12 +1,11 @@
 {
   "name": "es7-minimal",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "template for an es7 project with webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --env=production --progress --profile --colors",
-    "build:dev": "webpack --env=development",
-    "start": "webpack-dev-server --env=development",
+    "build": "webpack -p",
+    "dev-server": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -26,6 +25,7 @@
     "chunkhash-replace-webpack-plugin": "0.0.10",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"

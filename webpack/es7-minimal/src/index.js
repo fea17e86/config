@@ -13,8 +13,15 @@ const readme = [
   "- babel-es2015, babel-stage-0",
   "- seperation in chunks (manifest, vendor, main)",
   "- css import for js files",
-  "- file names with hash"
+  "- html generation with hash for files names",
+  "- uglifying",
+  "- source maps",
+  "- dev server",
+  "- hot reload"
 ];
 
-createComponents([].concat(readme, ["Execution: " + moment().format("MMMM Do YYYY, h:mm:ss a")]))
-  .forEach((component) => document.body.appendChild(component));
+const components = createComponents([].concat(readme, ["Execution: " + moment().format("MMMM Do YYYY, h:mm:ss a")]));
+
+console.debug("components", components);
+
+components.forEach((component) => document.body.appendChild(component));
